@@ -7,12 +7,13 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src\\Features\\Login.feature",
+//        features = "src\\Features\\Login.feature",
+        features="src\\Features\\Customers.feature",
         glue = "stepDefinitions",
 
         // Quickly scan features without actually implementing them
         // Makes sure that every Step have the corresponding method available in the StepDefinition file
-        dryRun = false,
+        dryRun = true,
 
         // "pretty" - generate steps clearly in output console
         // "html:test-output" - generate report in the test-output folder

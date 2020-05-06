@@ -67,4 +67,55 @@ import pageObjects.LoginPage;
         driver.quit();
         // driver.close();
     }
+
+
+    // Customer feature step definitions...............................................
+
+     @Then("User can view Dashboard")
+     public void user_can_view_Dashboard() {
+         // Write code here that turns the phrase above into concrete actions
+         throw new cucumber.api.PendingException();
+     }
+
+     @When("User click on customers Menu")
+     public void user_click_on_customers_Menu() {
+         // Write code here that turns the phrase above into concrete actions
+         throw new cucumber.api.PendingException();
+     }
+
+     @When("click on customers Menu Item")
+     public void click_on_customers_Menu_Item() {
+         // Write code here that turns the phrase above into concrete actions
+         throw new cucumber.api.PendingException();
+     }
+
+     @When("click on Add new button")
+     public void click_on_Add_new_button() {
+         // Write code here that turns the phrase above into concrete actions
+         throw new cucumber.api.PendingException();
+     }
+
+     @Then("User can view Add new customer page")
+     public void user_can_view_Add_new_customer_page() {
+         // Write code here that turns the phrase above into concrete actions
+         throw new cucumber.api.PendingException();
+     }
+
+     @When("User enter customer info")
+     public void user_enter_customer_info() {
+         // Write code here that turns the phrase above into concrete actions
+         throw new cucumber.api.PendingException();
+     }
+
+     @When("click on Save button")
+     public void click_on_Save_button() {
+         // Write code here that turns the phrase above into concrete actions
+         throw new cucumber.api.PendingException();
+     }
+
+     @Then("User can view confirmation message {string}")
+     public void user_can_view_confirmation_message(String string) {
+         // Write code here that turns the phrase above into concrete actions
+         throw new cucumber.api.PendingException();
+     }
 }
