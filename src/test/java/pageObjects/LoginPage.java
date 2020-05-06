@@ -12,7 +12,7 @@ public class LoginPage {
     public WebDriver ldriver;
 
     public LoginPage(WebDriver rdriver) {
-        ldriver = ldriver;
+        ldriver = rdriver;
         PageFactory.initElements(rdriver, this);
     }
 
