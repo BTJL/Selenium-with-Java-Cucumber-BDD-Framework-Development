@@ -24,7 +24,7 @@ public class AddCustomerPage {
 
     // Step 1: Capture the locator of all elements
     By lnkCustomers_menu = By.xpath("//a[@href='#']//span[contains(text(), 'Customers')]");
-    By getLnkCustomers_menuitem = By.xpath("//span[@class='menu-item-title'][contains(text(), 'Customers]");
+    By getLnkCustomers_menuitem = By.xpath("//span[@class='menu-item-title'][contains(text(), 'Customers')]");
 
     By btnAddNew = By.xpath("//a[@class='btn bg-blue']");
 
@@ -48,11 +48,9 @@ public class AddCustomerPage {
     By txtFirstName = By.xpath("//input[@id='FirstName']");
     By txtLastName = By.xpath("//input[@id='LastName']");
 
-    By txtDob = By.xpath("//input[@id='DateOfBirth]");
+    By txtDob = By.xpath("//input[@id='DateOfBirth']");
 
-    By txtCompanyName = By.xpath("//input[@id='DateOfBirth']");
-
-    By CompanyName = By.xpath("//input[@id='Company']");
+    By txtCompanyName = By.xpath("//input[@id='Company']");
 
     By txtAdminContent = By.xpath("//textarea[@id='AdminComment']");
 
@@ -60,6 +58,11 @@ public class AddCustomerPage {
 
 
     // Step 2: Action methods -- Using the
+
+    public String getPageTitle() {
+        return ldriver.getTitle();
+    }
+
     public void clickOnCustomerMenu() {
         ldriver.findElement(lnkCustomers_menu).click();
     }
@@ -81,9 +84,9 @@ public class AddCustomerPage {
     }
 
     public void setCustomerRoles(String role) throws InterruptedException {
-        if (!role.equals("Vendors")) // If role is vendors should not delete Registered
-            ldriver.findElement(By.xpath("//*[@id=\"SelectedCustomerRoleIds_taglist\"]/li/span[2]"));
-
+        if (!role.equals("Vendors")) {// If role is vendors should not delete Registered
+            ldriver.findElement(By.xpath("//*[@id=\"SelectedCustomerRoleIds_taglist\"]/li/span[2]")).click();
+        }
         ldriver.findElement(txtcustomerRoles).click();
 
         WebElement listitem;

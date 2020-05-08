@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 
         // Quickly scan features without actually implementing them
         // Makes sure that every Step have the corresponding method available in the StepDefinition file
-        dryRun = true,
+        dryRun = false,
 
         // "pretty" - generate steps clearly in output console
         // "html:test-output" - generate report in the test-output folder
