@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
+import pageObjects.SearchCustomerPage;
 
  public class Steps extends BaseClass {
 
@@ -131,4 +132,27 @@ import pageObjects.LoginPage;
          Assert.assertTrue(driver.findElement(By.tagName("body")).getText()
                  .contains("The new customer has been added successfully"));
      }
+
+
+     // Steps for searching customer using Email ID ..............................................
+
+     @When("Enter customer Email")
+     public void enter_customer_Email() {
+         searchCust = new SearchCustomerPage(driver);
+         searchCust.setEmail("victoria_victoria@nopCommerce.com");
+     }
+
+     @When("Click on search button")
+     public void click_on_search_button() throws InterruptedException {
+        searchCust.clickSearch();
+        Thread.sleep(3000);
+     }
+
+     @Then("User should found Email in the Search table")
+     public void user_should_found_Email_in_the_Search_table() {
+         boolean status = searchCust.searchCustomerByEmail("victoria_victoria@nopCommerce.com");
+         Assert.assertEquals(true, status);
+     }
+
+
 }
