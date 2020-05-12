@@ -133,7 +133,7 @@ public class SearchCustomerPage {
 
         for (int i = 1; i <= getNoOfRows(); i++) {
             // Example of one cell Xpath //*[@id="customers-grid"]/tbody/tr[1]/td[2]
-            String emailid = table.findElement(By.xpath("//table[@id='customers-grid']//tbody/tr[" + i + "]/td[2]")).getText();
+            String emailid = table.findElement(By.xpath("//table[@id='customers-grid']/tbody/tr[" + i + "]/td[2]")).getText();
             System.out.println(emailid);
 
             if (emailid.equals(email)) {

@@ -137,7 +137,8 @@ import pageObjects.SearchCustomerPage;
      // Steps for searching customer using Email ID ..............................................
 
      @When("Enter customer Email")
-     public void enter_customer_Email() {
+     public void enter_customer_Email() throws InterruptedException {
+         Thread.sleep(2000);
          searchCust = new SearchCustomerPage(driver);
          searchCust.setEmail("victoria_victoria@nopCommerce.com");
      }
@@ -156,7 +157,8 @@ import pageObjects.SearchCustomerPage;
 
      // Steps for searching a customer by using First Name & Last Name
      @When("Enter customer FirstName")
-     public void enter_customer_FirstName() {
+     public void enter_customer_FirstName() throws InterruptedException {
+         Thread.sleep(2000);
          searchCust = new SearchCustomerPage(driver);
          searchCust.setEmail("Victoria");
      }
