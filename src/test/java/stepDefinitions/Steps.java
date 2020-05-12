@@ -154,5 +154,23 @@ import pageObjects.SearchCustomerPage;
          Assert.assertEquals(true, status);
      }
 
+     // Steps for searching a customer by using First Name & Last Name
+     @When("Enter customer FirstName")
+     public void enter_customer_FirstName() {
+         searchCust = new SearchCustomerPage(driver);
+         searchCust.setEmail("Victoria");
+     }
+
+     @When("Enter customer LastName")
+     public void enter_customer_LastName() {
+         searchCust.setLastName("Terces");
+     }
+
+     @Then("User should found Name in the Search table")
+     public void user_should_found_Name_in_the_Search_table() {
+         boolean status = searchCust.searchCustomerByName("Victoria Terces");
+         Assert.assertEquals(true, status);
+     }
+
 
 }

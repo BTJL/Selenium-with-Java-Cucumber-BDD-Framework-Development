@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 //        features = "src\\Features\\Login.feature",
-        features="src\\Features\\Customers.feature",
+        features= "src\\Features\\",
         glue = "stepDefinitions",
 
         // Quickly scan features without actually implementing them
