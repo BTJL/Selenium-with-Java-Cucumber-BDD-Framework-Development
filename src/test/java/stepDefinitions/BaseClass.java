@@ -7,6 +7,8 @@ import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
 import pageObjects.SearchCustomerPage;
 
+import org.apache.log4j.Logger;
+
 public class BaseClass {
 
     // For all the steps these variables are required
@@ -14,6 +16,7 @@ public class BaseClass {
     public LoginPage lp;
     public AddCustomerPage addCust;
     public SearchCustomerPage searchCust;
+    public static Logger logger;
 
     // Created for generating random string for Unique email
     public static String randomstring() {

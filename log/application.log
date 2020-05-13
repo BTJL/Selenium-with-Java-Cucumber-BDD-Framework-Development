@@ -1,0 +1,80 @@
+2020-05-13 17:21:09,567 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:21:09,583 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:21:11,419 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:21:11,648 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:21:39,671 [main] INFO SeleniumCucumber2 - ****** Adding new customer ******
+2020-05-13 17:21:39,671 [main] INFO SeleniumCucumber2 - ****** Providing customer details ******
+2020-05-13 17:21:42,732 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:21:42,736 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:21:45,122 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:21:45,333 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:22:32,936 [main] INFO SeleniumCucumber2 - ****** Searching customer by using email id ******
+2020-05-13 17:22:36,500 [main] INFO SeleniumCucumber2 - ****** Closing browser ******
+2020-05-13 17:22:40,175 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:22:40,177 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:22:42,519 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:22:42,695 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:23:15,936 [main] INFO SeleniumCucumber2 - ****** Searching customer by Name ******
+2020-05-13 17:23:19,382 [main] INFO SeleniumCucumber2 - ****** Closing browser ******
+2020-05-13 17:23:23,113 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:23:23,114 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:23:24,768 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:23:24,970 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:23:28,498 [main] INFO SeleniumCucumber2 - ****** Login failed ******
+2020-05-13 17:23:28,503 [main] INFO SeleniumCucumber2 - ****** Click on logout link ******
+2020-05-13 17:23:37,172 [main] INFO SeleniumCucumber2 - ****** Login failed ******
+2020-05-13 17:23:37,176 [main] INFO SeleniumCucumber2 - ****** Closing browser ******
+2020-05-13 17:23:40,883 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:23:40,885 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:23:43,197 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:23:43,397 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:23:46,888 [main] INFO SeleniumCucumber2 - ****** Login failed ******
+2020-05-13 17:23:46,892 [main] INFO SeleniumCucumber2 - ****** Click on logout link ******
+2020-05-13 17:23:54,074 [main] INFO SeleniumCucumber2 - ****** Login failed ******
+2020-05-13 17:23:54,087 [main] INFO SeleniumCucumber2 - ****** Closing browser ******
+2020-05-13 17:23:57,769 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:23:57,770 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:24:00,205 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:24:00,426 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:24:01,577 [main] INFO SeleniumCucumber2 - ****** Login passed ******
+2020-05-13 17:28:17,365 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:28:17,382 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:28:20,937 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:28:21,181 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:28:45,259 [main] INFO SeleniumCucumber2 - ****** Adding new customer ******
+2020-05-13 17:28:45,259 [main] INFO SeleniumCucumber2 - ****** Providing customer details ******
+2020-05-13 17:28:52,613 [main] INFO SeleniumCucumber2 - ****** Saving customer data ******
+2020-05-13 17:28:56,241 [main] INFO SeleniumCucumber2 - ****** Closing browser ******
+2020-05-13 17:28:59,916 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:28:59,917 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:29:02,370 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:29:02,549 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:29:15,599 [main] INFO SeleniumCucumber2 - ****** Searching customer by using email id ******
+2020-05-13 17:29:18,976 [main] INFO SeleniumCucumber2 - ****** Closing browser ******
+2020-05-13 17:29:22,711 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:29:22,712 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:29:25,033 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:29:25,227 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:29:51,248 [main] INFO SeleniumCucumber2 - ****** Searching customer by Name ******
+2020-05-13 17:29:54,723 [main] INFO SeleniumCucumber2 - ****** Closing browser ******
+2020-05-13 17:29:58,406 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:29:58,407 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:30:00,089 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:30:00,283 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:30:04,441 [main] INFO SeleniumCucumber2 - ****** Login failed ******
+2020-05-13 17:30:04,445 [main] INFO SeleniumCucumber2 - ****** Click on logout link ******
+2020-05-13 17:30:12,140 [main] INFO SeleniumCucumber2 - ****** Login failed ******
+2020-05-13 17:30:12,145 [main] INFO SeleniumCucumber2 - ****** Closing browser ******
+2020-05-13 17:30:15,846 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:30:15,847 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:30:17,465 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:30:17,641 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:30:21,187 [main] INFO SeleniumCucumber2 - ****** Login failed ******
+2020-05-13 17:30:21,191 [main] INFO SeleniumCucumber2 - ****** Click on logout link ******
+2020-05-13 17:30:29,143 [main] INFO SeleniumCucumber2 - ****** Login failed ******
+2020-05-13 17:30:29,154 [main] INFO SeleniumCucumber2 - ****** Closing browser ******
+2020-05-13 17:30:32,867 [main] INFO SeleniumCucumber2 - ****** Launching Browser ******
+2020-05-13 17:30:32,868 [main] INFO SeleniumCucumber2 - ****** Opening URL ******
+2020-05-13 17:30:34,565 [main] INFO SeleniumCucumber2 - ****** Providing logging details ******
+2020-05-13 17:30:34,787 [main] INFO SeleniumCucumber2 - ****** Started login ******
+2020-05-13 17:30:35,992 [main] INFO SeleniumCucumber2 - ****** Login passed ******

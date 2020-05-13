@@ -685,7 +685,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinitions.Steps.page_Title_should_be(Steps.java:51)\r\n\tat ✽.Page Title should be \"Dashboard / nopCommerce administration\"(file:src/Features/Login.feature:18)\r\n",
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinitions.Steps.page_Title_should_be(Steps.java:63)\r\n\tat ✽.Page Title should be \"Dashboard / nopCommerce administration\"(file:src/Features/Login.feature:18)\r\n",
   "status": "failed"
 });
 formatter.step({
