@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/Features/Customers.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:Features/Customers.feature");
 formatter.feature({
   "name": "Customers",
   "description": "",
@@ -8,6 +8,9 @@ formatter.background({
   "name": "Below are the common steps for each scenario",
   "description": "",
   "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User Launch Chrome browser",
@@ -62,7 +65,12 @@ formatter.result({
 formatter.scenario({
   "name": "Add new Customer",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@sanity"
+    }
+  ]
 });
 formatter.step({
   "name": "User click on customers Menu",
@@ -149,6 +157,9 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "User Launch Chrome browser",
   "keyword": "Given "
@@ -202,7 +213,12 @@ formatter.result({
 formatter.scenario({
   "name": "Search Customer by EmailID",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
 });
 formatter.step({
   "name": "User click on customers Menu",
@@ -269,6 +285,9 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "User Launch Chrome browser",
   "keyword": "Given "
@@ -322,7 +341,12 @@ formatter.result({
 formatter.scenario({
   "name": "Search Customer by Name",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
 });
 formatter.step({
   "name": "User click on customers Menu",
@@ -394,7 +418,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.uri("file:src/Features/Login.feature");
+formatter.uri("file:Features/Login.feature");
 formatter.feature({
   "name": "Login",
   "description": "",
@@ -403,7 +427,15 @@ formatter.feature({
 formatter.scenario({
   "name": "Successful Login with Valid Credentials",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@sanity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User Launch Chrome browser",
@@ -488,7 +520,12 @@ formatter.result({
 formatter.scenarioOutline({
   "name": "Login Data Driven",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
 });
 formatter.step({
   "name": "User Launch Chrome browser",
@@ -550,7 +587,15 @@ formatter.examples({
 formatter.scenario({
   "name": "Login Data Driven",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User Launch Chrome browser",
@@ -635,7 +680,15 @@ formatter.result({
 formatter.scenario({
   "name": "Login Data Driven",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@regression"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "User Launch Chrome browser",
@@ -685,7 +738,7 @@ formatter.match({
   "location": "Steps.page_Title_should_be(String)"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinitions.Steps.page_Title_should_be(Steps.java:63)\r\n\tat ✽.Page Title should be \"Dashboard / nopCommerce administration\"(file:src/Features/Login.feature:18)\r\n",
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinitions.Steps.page_Title_should_be(Steps.java:90)\r\n\tat ✽.Page Title should be \"Dashboard / nopCommerce administration\"(file:Features/Login.feature:20)\r\n",
   "status": "failed"
 });
 formatter.step({

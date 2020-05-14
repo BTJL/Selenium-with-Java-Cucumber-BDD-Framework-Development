@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -10,23 +11,49 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
 import pageObjects.SearchCustomerPage;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 public class Steps extends BaseClass {
 
+    @Before // Cucumber hook to execute first before test cases start
+    public void setup() throws IOException { // Contains all the configurations
 
-
-    @Given("User Launch Chrome browser")
-    public void user_Launch_Chrome_browser() {
+        // Reading properties
+        configProp = new Properties();
+        FileInputStream configPropFile = new FileInputStream("config.properties"); // Opening the config file
+        configProp.load(configPropFile);
 
         logger = Logger.getLogger("SeleniumCucumber2"); // Para - Name of project ; Added logger
         PropertyConfigurator.configure("log4j.properties"); // Para - specify the location of the file, if within project just the name
 
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//Drivers/chromedriver.exe");
-        driver = new ChromeDriver();
+        // Launching the specified browser
+        String browser = configProp.getProperty("browser");
+        if (browser.equals("chrome")) { // equals value should match exactly with the value of browser in config.properties
+            System.setProperty("webdriver.chrome.driver", configProp.getProperty("chromepath"));
+            driver = new ChromeDriver();
+        } else if (browser.equals("firefox")) {
+            System.setProperty("webdriver.gecko.driver", configProp.getProperty("firefoxpath"));
+            driver = new FirefoxDriver();
+        } else if (browser.equals("ie")) {
+            System.setProperty("webdriver.ie.driver", configProp.getProperty("iepath"));
+            driver = new InternetExplorerDriver();
+        }
+
         logger.info("****** Launching Browser ******");
+    }
+
+
+    @Given("User Launch Chrome browser")
+    public void user_Launch_Chrome_browser() {
         lp = new LoginPage(driver);
     }
 
